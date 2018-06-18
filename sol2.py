@@ -1,0 +1,8 @@
+z_ts = pca.transform(x_ts)
+plt.figure()
+plt.scatter(z_ts[y_ts == 1, 0], z_ts[y_ts == 1, 1], color="r")
+plt.scatter(z_ts[y_ts == -1, 0], z_ts[y_ts == -1, 1], color="b")
+plt.title("PCA transformation applied to Test data")
+plt.xlabel("PC1")
+plt.ylabel("PC2")
+plt.show()
